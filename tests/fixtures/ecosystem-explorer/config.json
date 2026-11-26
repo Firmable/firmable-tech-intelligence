@@ -1,0 +1,7 @@
+{
+  "max_pages": 2,
+  "with_evidence": false,
+  "min_companies": 2,
+  "min_answered": 2,
+  "group_by": "segment"
+}

@@ -1,0 +1,23 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "shared/typescript"
+    },
+    {
+      "path": "recipes/ecosystem-explorer/typescript"
+    },
+    {
+      "path": "recipes/stack-comparison/typescript"
+    },
+    {
+      "path": "recipes/integration-audience-map/typescript"
+    },
+    {
+      "path": "recipes/tech-fit-tiers/typescript"
+    },
+    {
+      "path": "recipes/stack-talk-tracks/typescript"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+row_id,domain,company_id,company_name
+s1,acme.example,,Acme *Example*
+s2,beta.example,,
+s3,gamma.example,,Gamma Example
+s4,delta.example,,Delta Example
+s5,epsilon.example,,# Epsilon | Example
+s6,,f900000000006,Zeta Example
+s7,acme.example,,Acme again
+s8,bad_domain,,Broken

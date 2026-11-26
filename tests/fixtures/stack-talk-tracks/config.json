@@ -1,0 +1,37 @@
+{
+  "max_pages": 2,
+  "max_items_per_track": 2,
+  "tracks": [
+    {
+      "id": "crm_sync",
+      "label": "CRM sync",
+      "when": {
+        "vendor_slugs": [
+          "salesforce"
+        ],
+        "min_confidence": "medium"
+      },
+      "template": "{company_name} runs {product} from {vendor}. Ask how they keep it in sync with the rest of their stack."
+    },
+    {
+      "id": "warehouse",
+      "label": "Warehouse reporting",
+      "when": {
+        "category_slugs": [
+          "data-warehousing"
+        ]
+      },
+      "template": "Firmable last observed {product} at {company_name} on {last_observed}. A question about reporting needs could open the conversation."
+    },
+    {
+      "id": "legacy",
+      "label": "Legacy CRM",
+      "when": {
+        "aliases": [
+          "Legacy CRM"
+        ]
+      },
+      "template": "{company_name} shows {product} in the {category} category."
+    }
+  ]
+}

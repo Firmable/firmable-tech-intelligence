@@ -1,0 +1,21 @@
+{
+  "description": "403 Forbidden from Tech Intel stops the run.",
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "acme.example",
+          "withEvidence": "true"
+        }
+      },
+      "response": {
+        "status": 403,
+        "json": {
+          "error": "Forbidden"
+        }
+      }
+    }
+  ]
+}

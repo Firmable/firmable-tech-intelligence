@@ -1,0 +1,95 @@
+{
+  "description": "A 500, a timeout on page 2, a malformed body and a 402 that stops the run.",
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "err500.example"
+        }
+      },
+      "response": {
+        "status": 500,
+        "json": {
+          "error": "Internal error"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "timeout.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000202",
+          "total": 120,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            }
+          ],
+          "next_cursor": "c-t-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "timeout.example",
+          "cursor": "c-t-2"
+        }
+      },
+      "response": {
+        "timeout": true
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "malformed.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "text": "not json"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "nocredit.example"
+        }
+      },
+      "response": {
+        "status": 402,
+        "json": {
+          "error": "Insufficient credits"
+        }
+      }
+    }
+  ]
+}

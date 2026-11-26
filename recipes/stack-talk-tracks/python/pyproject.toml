@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "firmable-stack-talk-tracks"
+version = "0.1.0"
+description = "Template talking points per account from observed technologies."
+requires-python = ">=3.11"
+dependencies = ["firmable-api-client"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+firmable-stack-talk-tracks = "stack_talk_tracks.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

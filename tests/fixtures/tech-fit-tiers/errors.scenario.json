@@ -1,0 +1,67 @@
+{
+  "description": "A 500, a timeout on the first page, a malformed body and a 402 that stops the run.",
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "err500.example",
+          "withEvidence": "true"
+        }
+      },
+      "response": {
+        "status": 503,
+        "json": {
+          "error": "Service unavailable"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "timeout.example",
+          "withEvidence": "true"
+        }
+      },
+      "response": {
+        "timeout": true
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "malformed.example",
+          "withEvidence": "true"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000303",
+          "total": 3
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "nocredit.example",
+          "withEvidence": "true"
+        }
+      },
+      "response": {
+        "status": 402,
+        "json": {
+          "error": "Insufficient credits"
+        }
+      }
+    }
+  ]
+}

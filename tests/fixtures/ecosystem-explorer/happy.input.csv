@@ -1,0 +1,11 @@
+row_id,domain,company_id,company_name,segment
+h1,https://www.acme.example/about,,Acme,fintech
+h2,beta.example,,Beta,fintech
+h3,gamma.example,,Gamma,retail
+h4,delta.example,,Delta,retail
+h5,,f900000000005,Epsilon,retail
+h6,ACME.example,,Acme again,retail
+h7,not a domain,,Broken,retail
+h8,ghost.example,,Ghost,fintech
+h9,epsilon.example,,Epsilon by domain,retail
+h10,zeta.example,,"=HYPERLINK(""http://x"")",

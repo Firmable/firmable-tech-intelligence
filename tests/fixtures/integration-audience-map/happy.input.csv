@@ -1,0 +1,9 @@
+row_id,domain,company_id,company_name,segment
+h1,acme.example,,Acme Example,Enterprise
+h2,beta.example,,Beta Example,Mid-market
+h3,gamma.example,,Gamma Example,Mid-market
+h4,https://www.ACME.example/about,,Acme Example again,Enterprise
+h5,not a domain,,Broken Row,Enterprise
+h6,,f900000000006,Zeta Example,
+h7,delta.example,,<b>Delta</b> Example,Enterprise
+h8,,f900000000001,Acme by ID,Enterprise

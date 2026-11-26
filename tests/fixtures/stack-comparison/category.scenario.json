@@ -1,0 +1,134 @@
+{
+  "description": "Comparison at category level.",
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "acme.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000001",
+          "total": 2,
+          "tech_intelligence": [
+            {
+              "product": "Slack",
+              "product_slug": "slack",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Collaboration",
+              "category_slug": "collaboration",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            },
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "beta.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000002",
+          "total": 2,
+          "tech_intelligence": [
+            {
+              "product": "Microsoft Teams",
+              "product_slug": "microsoft-teams",
+              "vendor": "Microsoft",
+              "vendor_slug": "microsoft",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Collaboration",
+              "category_slug": "collaboration",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            },
+            {
+              "product": "Snowflake",
+              "product_slug": "snowflake",
+              "vendor": "Snowflake",
+              "vendor_slug": "snowflake",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Data",
+              "category_slug": "data",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "epsilon.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000005",
+          "total": 1,
+          "tech_intelligence": [
+            {
+              "product": "Microsoft Teams",
+              "product_slug": "microsoft-teams",
+              "vendor": "Microsoft",
+              "vendor_slug": "microsoft",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Collaboration",
+              "category_slug": "collaboration",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

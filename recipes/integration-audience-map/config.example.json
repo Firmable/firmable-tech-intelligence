@@ -1,0 +1,12 @@
+{
+  "match": "any",
+  "min_confidence": "medium",
+  "max_recency": "older",
+  "max_pages": 5,
+  "min_answered": 5,
+  "targets": [
+    { "id": "salesforce", "label": "Salesforce", "vendor_slugs": ["salesforce"] },
+    { "id": "hubspot", "label": "HubSpot", "aliases": ["HubSpot"] },
+    { "id": "slack", "label": "Slack", "aliases": ["Slack"] }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "match": "any",
+  "min_confidence": "medium",
+  "max_recency": "90d",
+  "max_pages": 2,
+  "min_answered": 2,
+  "targets": [
+    {
+      "id": "salesforce",
+      "label": "Salesforce",
+      "vendor_slugs": [
+        "salesforce"
+      ]
+    },
+    {
+      "id": "hubspot",
+      "label": "HubSpot",
+      "product_slugs": [
+        "hubspot-crm"
+      ],
+      "aliases": [
+        "HubSpot"
+      ]
+    },
+    {
+      "id": "snowflake",
+      "label": "Snowflake",
+      "product_slugs": [
+        "snowflake"
+      ],
+      "aliases": [
+        "Snowflake"
+      ]
+    }
+  ]
+}

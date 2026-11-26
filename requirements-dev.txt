@@ -1,0 +1,9 @@
+# Installs the shared client, every recipe and the test runner in editable mode.
+# Run from the repository root: pip install -r requirements-dev.txt
+pytest>=8
+-e shared/python
+-e recipes/ecosystem-explorer/python
+-e recipes/stack-comparison/python
+-e recipes/integration-audience-map/python
+-e recipes/tech-fit-tiers/python
+-e recipes/stack-talk-tracks/python

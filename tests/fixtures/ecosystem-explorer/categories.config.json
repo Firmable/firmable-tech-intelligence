@@ -1,0 +1,9 @@
+{
+  "max_pages": 1,
+  "categories": [
+    "business-applications",
+    "data"
+  ],
+  "min_companies": 2,
+  "min_answered": 1
+}

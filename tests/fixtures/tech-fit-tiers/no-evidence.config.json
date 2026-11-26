@@ -1,0 +1,75 @@
+{
+  "with_evidence": false,
+  "max_pages": 1,
+  "signals": [
+    {
+      "id": "salesforce",
+      "label": "Salesforce CRM",
+      "vendor_slugs": [
+        "salesforce"
+      ],
+      "min_confidence": "medium"
+    },
+    {
+      "id": "marketing_automation",
+      "label": "Marketing automation",
+      "category_slugs": [
+        "marketing-automation"
+      ]
+    },
+    {
+      "id": "legacy_crm",
+      "label": "Legacy CRM",
+      "product_slugs": [
+        "legacy-crm"
+      ],
+      "aliases": [
+        "Legacy CRM"
+      ]
+    },
+    {
+      "id": "warehouse",
+      "label": "Cloud data warehouse",
+      "product_slugs": [
+        "snowflake"
+      ],
+      "aliases": [
+        "BigQuery"
+      ]
+    }
+  ],
+  "tiers": [
+    {
+      "id": "tier_1",
+      "label": "Tier 1",
+      "when": {
+        "all": [
+          "salesforce",
+          "warehouse"
+        ],
+        "none": [
+          "legacy_crm"
+        ]
+      }
+    },
+    {
+      "id": "tier_2",
+      "label": "Tier 2",
+      "when": {
+        "any": [
+          "salesforce",
+          "marketing_automation"
+        ]
+      }
+    },
+    {
+      "id": "tier_3",
+      "label": "Tier 3",
+      "when": {
+        "all": [
+          "warehouse"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "firmable-integration-audience-map"
+version = "0.1.0"
+description = "Find companies in a list whose observed stacks include the technologies you name."
+requires-python = ">=3.11"
+dependencies = ["firmable-api-client"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+firmable-integration-audience-map = "integration_audience_map.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
