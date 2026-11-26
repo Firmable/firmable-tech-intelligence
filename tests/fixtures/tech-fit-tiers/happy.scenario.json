@@ -1,0 +1,776 @@
+{
+  "description": "Tier 1, Tier 2 because of a legacy CRM, a needs-review row, a below-threshold signal, no tier, total 0, a duplicate, invalid input and an incomplete list with no signal.",
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "acme.example",
+          "withEvidence": "true"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000001",
+          "total": 3,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct",
+              "evidence_detail": {
+                "confidence": "high",
+                "first_seen": "2026-05-01",
+                "last_seen": "2026-11-10",
+                "evidence_count": 40,
+                "evidence_by_type": [
+                  {
+                    "type": "website",
+                    "count": 1,
+                    "capped": false
+                  },
+                  {
+                    "type": "job_ad",
+                    "count": 38,
+                    "capped": true
+                  },
+                  {
+                    "type": "dns_record",
+                    "count": 1,
+                    "capped": false
+                  }
+                ],
+                "records": [
+                  {
+                    "type": "website",
+                    "product": "Synthetic",
+                    "found": "script_tag",
+                    "version": null,
+                    "location": "https://acme.example/contact",
+                    "record": null,
+                    "context": null,
+                    "departments": null,
+                    "rating": null,
+                    "site_count": null,
+                    "belongs_because": [
+                      "company_domain"
+                    ],
+                    "first_seen": "2026-05-01",
+                    "last_seen": "2026-11-10",
+                    "confidence": "high"
+                  },
+                  {
+                    "type": "dns_record",
+                    "product": "Synthetic",
+                    "found": "script_tag",
+                    "version": null,
+                    "location": "",
+                    "record": null,
+                    "context": null,
+                    "departments": null,
+                    "rating": null,
+                    "site_count": null,
+                    "belongs_because": [
+                      "company_domain"
+                    ],
+                    "first_seen": "2026-05-01",
+                    "last_seen": "2026-11-10",
+                    "confidence": "high"
+                  },
+                  {
+                    "type": "job_ad",
+                    "product": "Synthetic",
+                    "found": "script_tag",
+                    "version": null,
+                    "location": null,
+                    "record": null,
+                    "context": null,
+                    "departments": null,
+                    "rating": null,
+                    "site_count": null,
+                    "belongs_because": [
+                      "company_domain"
+                    ],
+                    "first_seen": "2026-05-01",
+                    "last_seen": "2026-11-10",
+                    "confidence": "high"
+                  }
+                ]
+              }
+            },
+            {
+              "product": "Snowflake",
+              "product_slug": "snowflake",
+              "vendor": "Snowflake",
+              "vendor_slug": "snowflake",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Data Warehousing",
+              "category_slug": "data-warehousing",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct",
+              "evidence_detail": {
+                "confidence": "high",
+                "first_seen": "2026-05-01",
+                "last_seen": "2026-11-10",
+                "evidence_count": 1,
+                "evidence_by_type": [
+                  {
+                    "type": "website",
+                    "count": 1,
+                    "capped": false
+                  }
+                ],
+                "records": [
+                  {
+                    "type": "website",
+                    "product": "Synthetic",
+                    "found": "script_tag",
+                    "version": null,
+                    "location": "https://www.example.org/",
+                    "record": null,
+                    "context": null,
+                    "departments": null,
+                    "rating": null,
+                    "site_count": null,
+                    "belongs_because": [
+                      "company_domain"
+                    ],
+                    "first_seen": "2026-05-01",
+                    "last_seen": "2026-11-10",
+                    "confidence": "high"
+                  }
+                ]
+              }
+            },
+            {
+              "product": "Tool 1",
+              "product_slug": "tool-1",
+              "vendor": "Vendor 1",
+              "vendor_slug": "vendor-1",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "beta.example",
+          "withEvidence": "true"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000002",
+          "total": 3,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct",
+              "evidence_detail": {
+                "confidence": "high",
+                "first_seen": "2026-05-01",
+                "last_seen": "2026-11-10",
+                "evidence_count": 1,
+                "evidence_by_type": [
+                  {
+                    "type": "website",
+                    "count": 1,
+                    "capped": false
+                  }
+                ],
+                "records": [
+                  {
+                    "type": "website",
+                    "product": "Synthetic",
+                    "found": "script_tag",
+                    "version": null,
+                    "location": "https://www.example.org/",
+                    "record": null,
+                    "context": null,
+                    "departments": null,
+                    "rating": null,
+                    "site_count": null,
+                    "belongs_because": [
+                      "company_domain"
+                    ],
+                    "first_seen": "2026-05-01",
+                    "last_seen": "2026-11-10",
+                    "confidence": "high"
+                  }
+                ]
+              }
+            },
+            {
+              "product": "Snowflake",
+              "product_slug": "snowflake",
+              "vendor": "Snowflake",
+              "vendor_slug": "snowflake",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Data Warehousing",
+              "category_slug": "data-warehousing",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct",
+              "evidence_detail": {
+                "confidence": "high",
+                "first_seen": "2026-05-01",
+                "last_seen": "2026-11-10",
+                "evidence_count": 1,
+                "evidence_by_type": [
+                  {
+                    "type": "website",
+                    "count": 1,
+                    "capped": false
+                  }
+                ],
+                "records": [
+                  {
+                    "type": "website",
+                    "product": "Synthetic",
+                    "found": "script_tag",
+                    "version": null,
+                    "location": "https://www.example.org/",
+                    "record": null,
+                    "context": null,
+                    "departments": null,
+                    "rating": null,
+                    "site_count": null,
+                    "belongs_because": [
+                      "company_domain"
+                    ],
+                    "first_seen": "2026-05-01",
+                    "last_seen": "2026-11-10",
+                    "confidence": "high"
+                  }
+                ]
+              }
+            },
+            {
+              "product": "Legacy CRM",
+              "product_slug": "legacy-crm-suite",
+              "vendor": "Old Vendor",
+              "vendor_slug": "old-vendor",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct",
+              "evidence_detail": {
+                "confidence": "high",
+                "first_seen": "2026-05-01",
+                "last_seen": "2026-11-10",
+                "evidence_count": 1,
+                "evidence_by_type": [
+                  {
+                    "type": "website",
+                    "count": 1,
+                    "capped": false
+                  }
+                ],
+                "records": [
+                  {
+                    "type": "website",
+                    "product": "Synthetic",
+                    "found": "script_tag",
+                    "version": null,
+                    "location": "https://www.example.org/",
+                    "record": null,
+                    "context": null,
+                    "departments": null,
+                    "rating": null,
+                    "site_count": null,
+                    "belongs_because": [
+                      "company_domain"
+                    ],
+                    "first_seen": "2026-05-01",
+                    "last_seen": "2026-11-10",
+                    "confidence": "high"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "gamma.example",
+          "withEvidence": "true"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000003",
+          "total": 40,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct",
+              "evidence_detail": {
+                "confidence": "high",
+                "first_seen": "2026-05-01",
+                "last_seen": "2026-11-10",
+                "evidence_count": 1,
+                "evidence_by_type": [
+                  {
+                    "type": "website",
+                    "count": 1,
+                    "capped": false
+                  }
+                ],
+                "records": [
+                  {
+                    "type": "website",
+                    "product": "Synthetic",
+                    "found": "script_tag",
+                    "version": null,
+                    "location": "https://www.example.org/",
+                    "record": null,
+                    "context": null,
+                    "departments": null,
+                    "rating": null,
+                    "site_count": null,
+                    "belongs_because": [
+                      "company_domain"
+                    ],
+                    "first_seen": "2026-05-01",
+                    "last_seen": "2026-11-10",
+                    "confidence": "high"
+                  }
+                ]
+              }
+            },
+            {
+              "product": "Snowflake",
+              "product_slug": "snowflake",
+              "vendor": "Snowflake",
+              "vendor_slug": "snowflake",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Data Warehousing",
+              "category_slug": "data-warehousing",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct",
+              "evidence_detail": {
+                "confidence": "high",
+                "first_seen": "2026-05-01",
+                "last_seen": "2026-11-10",
+                "evidence_count": 1,
+                "evidence_by_type": [
+                  {
+                    "type": "website",
+                    "count": 1,
+                    "capped": false
+                  }
+                ],
+                "records": [
+                  {
+                    "type": "website",
+                    "product": "Synthetic",
+                    "found": "script_tag",
+                    "version": null,
+                    "location": "https://www.example.org/",
+                    "record": null,
+                    "context": null,
+                    "departments": null,
+                    "rating": null,
+                    "site_count": null,
+                    "belongs_because": [
+                      "company_domain"
+                    ],
+                    "first_seen": "2026-05-01",
+                    "last_seen": "2026-11-10",
+                    "confidence": "high"
+                  }
+                ]
+              }
+            }
+          ],
+          "next_cursor": "c-g-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "gamma.example",
+          "withEvidence": "true",
+          "cursor": "c-g-2"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000003",
+          "total": 40,
+          "tech_intelligence": [
+            {
+              "product": "Tool 1",
+              "product_slug": "tool-1",
+              "vendor": "Vendor 1",
+              "vendor_slug": "vendor-1",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            },
+            {
+              "product": "Tool 2",
+              "product_slug": "tool-2",
+              "vendor": "Vendor 2",
+              "vendor_slug": "vendor-2",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            }
+          ],
+          "next_cursor": "c-g-3"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "delta.example",
+          "withEvidence": "true"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000004",
+          "total": 3,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "low",
+              "recency": "older",
+              "last_observed": "2025-06-01",
+              "nature": "direct",
+              "evidence_detail": {
+                "confidence": "high",
+                "first_seen": "2026-05-01",
+                "last_seen": "2026-11-10",
+                "evidence_count": 1,
+                "evidence_by_type": [
+                  {
+                    "type": "website",
+                    "count": 1,
+                    "capped": false
+                  }
+                ],
+                "records": [
+                  {
+                    "type": "website",
+                    "product": "Synthetic",
+                    "found": "script_tag",
+                    "version": null,
+                    "location": "https://www.example.org/",
+                    "record": null,
+                    "context": null,
+                    "departments": null,
+                    "rating": null,
+                    "site_count": null,
+                    "belongs_because": [
+                      "company_domain"
+                    ],
+                    "first_seen": "2026-05-01",
+                    "last_seen": "2026-11-10",
+                    "confidence": "high"
+                  }
+                ]
+              }
+            },
+            {
+              "product": "Marketo Engage",
+              "product_slug": "marketo-engage",
+              "vendor": "Adobe",
+              "vendor_slug": "adobe",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Marketing Automation",
+              "category_slug": "marketing-automation",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            },
+            {
+              "product": "BIGQUERY",
+              "product_slug": "google-bigquery",
+              "vendor": "Google",
+              "vendor_slug": "google",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Data Warehousing",
+              "category_slug": "data-warehousing",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-09-01",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "epsilon.example",
+          "withEvidence": "true"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000005",
+          "total": 2,
+          "tech_intelligence": [
+            {
+              "product": "Tool 1",
+              "product_slug": "tool-1",
+              "vendor": "Vendor 1",
+              "vendor_slug": "vendor-1",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            },
+            {
+              "product": "Tool 2",
+              "product_slug": "tool-2",
+              "vendor": "Vendor 2",
+              "vendor_slug": "vendor-2",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "zeta.example",
+          "withEvidence": "true"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000006",
+          "total": 0,
+          "tech_intelligence": []
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "id": "f900000000009",
+          "withEvidence": "true"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000009",
+          "total": 30,
+          "tech_intelligence": [
+            {
+              "product": "Tool 1",
+              "product_slug": "tool-1",
+              "vendor": "Vendor 1",
+              "vendor_slug": "vendor-1",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            },
+            {
+              "product": "Tool 2",
+              "product_slug": "tool-2",
+              "vendor": "Vendor 2",
+              "vendor_slug": "vendor-2",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            }
+          ],
+          "next_cursor": "c-h-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "id": "f900000000009",
+          "withEvidence": "true",
+          "cursor": "c-h-2"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000009",
+          "total": 30,
+          "tech_intelligence": [
+            {
+              "product": "Tool 1",
+              "product_slug": "tool-1",
+              "vendor": "Vendor 1",
+              "vendor_slug": "vendor-1",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            },
+            {
+              "product": "Tool 2",
+              "product_slug": "tool-2",
+              "vendor": "Vendor 2",
+              "vendor_slug": "vendor-2",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            }
+          ],
+          "next_cursor": "c-h-3"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+row_id,domain,company_name
+e1,err500.example,E1
+e2,timeout.example,E2
+e3,malformed.example,E3
+e4,nocredit.example,E4
+e5,later.example,E5

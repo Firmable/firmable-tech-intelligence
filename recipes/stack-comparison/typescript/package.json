@@ -1,0 +1,21 @@
+{
+  "name": "firmable-stack-comparison",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Compare observed technology stacks for a list of companies.",
+  "type": "module",
+  "main": "dist/src/recipe.js",
+  "bin": {
+    "firmable-stack-comparison": "dist/src/cli.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "firmable-api-client": "0.1.0"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "tsc -b && node --test \"dist/tests/**/*.test.js\""
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "firmable-tech-intelligence",
+  "private": true,
+  "description": "Firmable firmable-tech-intelligence TypeScript examples. npm workspaces: the shared client and one package per recipe.",
+  "workspaces": [
+    "shared/typescript",
+    "recipes/*/typescript"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "test": "npm run build && node --test \"shared/typescript/dist/tests/**/*.test.js\" \"recipes/*/typescript/dist/tests/**/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

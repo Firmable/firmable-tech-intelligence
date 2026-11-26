@@ -1,0 +1,356 @@
+{
+  "description": "Filled tracks, a missing company name, an incomplete list, a below-threshold match, Markdown special characters, a missing last_observed, 404, a duplicate and invalid input.",
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "acme.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000001",
+          "total": 5,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            },
+            {
+              "product": "Snowflake",
+              "product_slug": "snowflake",
+              "vendor": "Snowflake",
+              "vendor_slug": "snowflake",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Data Warehousing",
+              "category_slug": "data-warehousing",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-09-30",
+              "nature": "direct"
+            },
+            {
+              "product": "BigQuery",
+              "product_slug": "google-bigquery",
+              "vendor": "Google",
+              "vendor_slug": "google",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Data Warehousing",
+              "category_slug": "data-warehousing",
+              "pillar_slug": "software",
+              "confidence": "low",
+              "recency": "older",
+              "last_observed": "2025-11-02",
+              "nature": "direct"
+            },
+            {
+              "product": "Redshift",
+              "product_slug": "amazon-redshift",
+              "vendor": "Amazon",
+              "vendor_slug": "amazon",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Data Warehousing",
+              "category_slug": "data-warehousing",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            },
+            {
+              "product": "Tool 1",
+              "product_slug": "tool-1",
+              "vendor": "Vendor 1",
+              "vendor_slug": "vendor-1",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "beta.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000002",
+          "total": 2,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            },
+            {
+              "product": "Legacy CRM",
+              "product_slug": "legacy-crm",
+              "vendor": "Old Vendor",
+              "vendor_slug": "old-vendor",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "gamma.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000003",
+          "total": 30,
+          "tech_intelligence": [
+            {
+              "product": "Tool 1",
+              "product_slug": "tool-1",
+              "vendor": "Vendor 1",
+              "vendor_slug": "vendor-1",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            },
+            {
+              "product": "Tool 2",
+              "product_slug": "tool-2",
+              "vendor": "Vendor 2",
+              "vendor_slug": "vendor-2",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            }
+          ],
+          "next_cursor": "c-g-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "gamma.example",
+          "cursor": "c-g-2"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000003",
+          "total": 30,
+          "tech_intelligence": [
+            {
+              "product": "Tool 1",
+              "product_slug": "tool-1",
+              "vendor": "Vendor 1",
+              "vendor_slug": "vendor-1",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            },
+            {
+              "product": "Tool 2",
+              "product_slug": "tool-2",
+              "vendor": "Vendor 2",
+              "vendor_slug": "vendor-2",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            }
+          ],
+          "next_cursor": "c-g-3"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "delta.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000004",
+          "total": 2,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "low",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            },
+            {
+              "product": "Tool 2",
+              "product_slug": "tool-2",
+              "vendor": "Vendor 2",
+              "vendor_slug": "vendor-2",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "epsilon.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000005",
+          "total": 2,
+          "tech_intelligence": [
+            {
+              "product": "Sales|Cloud\nPlus *beta*",
+              "product_slug": "salesforce-plus",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            },
+            {
+              "product": "Data_Lake [x]",
+              "product_slug": "data-lake",
+              "vendor": "Lake Co",
+              "vendor_slug": "lake-co",
+              "filter": "General",
+              "filter_slug": "general",
+              "category": "Data Warehousing",
+              "category_slug": "data-warehousing",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": null,
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "id": "f900000000006"
+        }
+      },
+      "response": {
+        "status": 404,
+        "json": {
+          "error": "Company profile not found"
+        }
+      }
+    }
+  ]
+}

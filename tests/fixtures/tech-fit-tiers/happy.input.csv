@@ -1,0 +1,10 @@
+row_id,domain,company_id,company_name
+t1,acme.example,,Acme Example
+t2,beta.example,,Beta Example
+t3,gamma.example,,Gamma Example
+t4,delta.example,,Delta Example
+t5,epsilon.example,,Epsilon Example
+t6,zeta.example,,Zeta Example
+t7,www.acme.example,,Acme again
+t8,not-a-domain,,Broken
+t9,,f900000000009,Eta by ID

@@ -1,0 +1,18 @@
+{
+  "max_pages": 5,
+  "max_items_per_track": 1,
+  "tracks": [
+    {
+      "id": "crm_sync",
+      "label": "CRM sync",
+      "when": { "vendor_slugs": ["salesforce"], "aliases": ["HubSpot"], "min_confidence": "medium" },
+      "template": "{company_name} appears to run {product} from {vendor}. Ask how they keep customer data in sync with the rest of their stack."
+    },
+    {
+      "id": "team_chat",
+      "label": "Team chat",
+      "when": { "aliases": ["Slack", "Microsoft Teams"] },
+      "template": "Firmable last observed {product} at {company_name} on {last_observed}. Ask whether alerts from your product would be useful in {product}."
+    }
+  ]
+}

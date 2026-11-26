@@ -1,0 +1,312 @@
+{
+  "description": "Match rule all over seven companies, one with an incomplete list.",
+  "exchanges": [
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "a1.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000101",
+          "total": 2,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            },
+            {
+              "product": "HubSpot CRM",
+              "product_slug": "hubspot-crm",
+              "vendor": "HubSpot",
+              "vendor_slug": "hubspot",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-09-15",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "a2.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000102",
+          "total": 1,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "a3.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000103",
+          "total": 1,
+          "tech_intelligence": [
+            {
+              "product": "HubSpot CRM",
+              "product_slug": "hubspot-crm",
+              "vendor": "HubSpot",
+              "vendor_slug": "hubspot",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-09-15",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "a4.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000104",
+          "total": 2,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            },
+            {
+              "product": "HubSpot CRM",
+              "product_slug": "hubspot-crm",
+              "vendor": "HubSpot",
+              "vendor_slug": "hubspot",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-09-15",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "a5.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000105",
+          "total": 3,
+          "tech_intelligence": [
+            {
+              "product": "Tool 1",
+              "product_slug": "tool-1",
+              "vendor": "Vendor 1",
+              "vendor_slug": "vendor-1",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            },
+            {
+              "product": "Tool 2",
+              "product_slug": "tool-2",
+              "vendor": "Vendor 2",
+              "vendor_slug": "vendor-2",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            },
+            {
+              "product": "Tool 3",
+              "product_slug": "tool-3",
+              "vendor": "Vendor 3",
+              "vendor_slug": "vendor-3",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Productivity",
+              "category_slug": "productivity",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-10-01",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "a6.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000106",
+          "total": 11,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            }
+          ],
+          "next_cursor": "c-a6-2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "path": "/tech-intel",
+        "query": {
+          "fqdn": "a7.example"
+        }
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "id": "f900000000107",
+          "total": 2,
+          "tech_intelligence": [
+            {
+              "product": "Salesforce Sales Cloud",
+              "product_slug": "salesforce-sales-cloud",
+              "vendor": "Salesforce",
+              "vendor_slug": "salesforce",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "high",
+              "recency": "30d",
+              "last_observed": "2026-11-10",
+              "nature": "direct"
+            },
+            {
+              "product": "HubSpot CRM",
+              "product_slug": "hubspot-crm",
+              "vendor": "HubSpot",
+              "vendor_slug": "hubspot",
+              "filter": "CRM",
+              "filter_slug": "crm",
+              "category": "Business Applications",
+              "category_slug": "business-applications",
+              "pillar_slug": "software",
+              "confidence": "medium",
+              "recency": "90d",
+              "last_observed": "2026-09-15",
+              "nature": "direct"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

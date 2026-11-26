@@ -1,0 +1,21 @@
+{
+  "name": "firmable-ecosystem-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Explore which technologies appear across a company cohort and which appear together.",
+  "type": "module",
+  "main": "dist/src/recipe.js",
+  "bin": {
+    "firmable-ecosystem-explorer": "dist/src/cli.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "firmable-api-client": "0.1.0"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "tsc -b && node --test \"dist/tests/**/*.test.js\""
+  }
+}

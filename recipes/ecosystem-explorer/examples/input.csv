@@ -1,0 +1,7 @@
+row_id,domain,company_name,segment
+c-001,canva.com,Canva,software
+c-002,atlassian.com,Atlassian,software
+c-003,safetyculture.com,SafetyCulture,software
+c-004,xero.com,Xero,fintech
+c-005,afterpay.com,Afterpay,fintech
+c-006,airwallex.com,Airwallex,fintech

@@ -1,0 +1,8 @@
+row_id,domain,company_id,company_name
+s1,acme.example,,Acme
+s2,beta.example,,#1 Beta | Pty
+s3,delta.example,,Delta
+s4,,f900000000005,Epsilon
+s5,ACME.example,,Acme again
+s6,ghost.example,,Ghost
+s7,gamma.example,,Gamma

@@ -1,0 +1,14 @@
+{
+  "with_evidence": false,
+  "max_pages": 5,
+  "signals": [
+    { "id": "salesforce", "label": "Salesforce CRM", "vendor_slugs": ["salesforce"], "min_confidence": "medium" },
+    { "id": "hubspot", "label": "HubSpot", "aliases": ["HubSpot"], "min_confidence": "medium" },
+    { "id": "slack", "label": "Slack", "aliases": ["Slack"] }
+  ],
+  "tiers": [
+    { "id": "tier_1", "label": "Tier 1", "when": { "all": ["salesforce", "slack"] } },
+    { "id": "tier_2", "label": "Tier 2", "when": { "any": ["salesforce", "hubspot"] } },
+    { "id": "tier_3", "label": "Tier 3", "when": { "all": ["slack"], "none": ["salesforce", "hubspot"] } }
+  ]
+}
